@@ -1,0 +1,117 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.color_nav {
+    background-color: rgb(181, 182, 181);
+}
+
+.text-white {
+    color: white;
+}
+
+.relleno_menu {
+    margin: 3px 10px 3px 10px;
+}
+
+/* Carrusel */
+
+.carrusel_margen_abajo {
+    margin-bottom: 20px;
+}
+
+/* Contenedor intro */
+
+.Contenedor_intro {
+    height: 100%;
+    padding: 20px;
+}
+.Texto_intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.size_t {
+    font-size: 25px;
+}
+
+.size_p {
+    font-size: 20px
+}
+
+/* Reducir tamaño de fuente en dispositivos móviles */
+@media (max-width: 768px) {
+.size_t {
+      font-size: 17px;
+    }
+    .top-50 {
+        top: 35%!important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .size_p {
+      font-size: 13px;
+    }
+}  
+
+
+/* Cards */
+
+.btn-pink {
+    background-color: rgb(221, 168, 188);
+    color: #fff;
+    font-size: 13px;
+  }
+
+.tarjetas_margen_abajo {
+    margin-bottom: 25px;
+}  
+
+/* Contenedor de tratamientos faciales  */
+.contenedor_tratamientos {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}  
+
+.texto_tratamiento {
+    background-color: rgb(181, 182, 181);
+    padding: 20px;
+}
+
+/* Formulario */
+.contenedor_form {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+    
+}
+
+.text-select {
+    font-size: 12px!important;
+}
+
+.full-width-form {
+  background-color: rgb(181, 182, 181); 
+  width: 100%;
+  padding: 20px; 
+}
+
+.margen_form {
+  margin-bottom: 25px;
+}
+
+/* Footer */
+
+.color_footer {
+    background-color: rgb(181, 182, 181);
+}
