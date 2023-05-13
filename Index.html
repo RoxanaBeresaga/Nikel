@@ -152,7 +152,7 @@
   <div class="Contenedor_intro text-center mx-auto">
     <div>
       <h2 class="Texto_intro size_t">Los mejores tratamientos a tu alcance</h2>
-      <p class="Texto_intro size_p">Obtén un 20% de descuento cuando el precio sea igual o más a los ARS 5.000.
+      <p class="Texto_intro size_p">Obtén un 20% de descuento con la compra de dos o más tratamientos</p>
       </p>
     </div>
   </div>
@@ -165,24 +165,24 @@
           <form id="formulario" class="p-4 full-width-form">
             <div class="form-group mb-3">
               <label for="tratamiento" class="p-2 text-select">Selecciona un tratamiento facial:</label>
-              <select id="tratamiento" name="tratamiento" class="form-control">
-                <option value="" class="text-select">Selecciona un tratamiento</option>
-                <option value="limpieza" class="text-select">Limpieza facial</option>
-                <option value="hidratacion" class="text-select">Hidratación facial</option>
-                <option value="acne" class="text-select">Exfoliación facial</option>
-                <option value="antiarrugas" class="text-select">Tratamiento antiarrugas</option>
+              <select id="tratamiento" name="tratamiento" class="form-select" onchange="calcularDescuento()" required>
+                <option value="" class="text-select" disabled selected hidden>Selecciona un tratamiento</option>
+                <option value="7000" class="text-select">Limpieza facial</option>
+                <option value="3000" class="text-select">Hidratación facial</option>
+                <option value="5000" class="text-select">Exfoliación facial</option>
+                <option value="10000" class="text-select">Tratamiento antiarrugas</option>
               </select>
             </div>
             <div class="form-group mt-3">
-              <label for="precio" class="p-2">Precio:</label>
-              <input type="number" id="precio" name="precio" class="form-control">
+              <label for="cant" class="p-2">Cantidad de tratamientos:</label>
+              <input type="number" id="cant" name="cant" class="form-control" required oninput="calcularDescuento()" min="1">
             </div>
             <div class="form-group mt-2">
               <button id="calcular-descuento" type="button" class="btn btn-pink">Calcular descuento</button>
             </div>
             <div class="form-group mt-3">
               <label for="precio-total" class="p-2">Precio total:</label>
-              <input type="text" id="precio-total" name="precio-total" readonly class="form-control">
+              <input placeholder="Valor total" type="text" id="precio-total" name="precio-total" readonly class="form-control" disabled>
             </div>
             <div class="form-group mt-3">
               <span id="aviso"></span>
